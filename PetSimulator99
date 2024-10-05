@@ -1,0 +1,10 @@
+local Username = getgenv().Username
+local Username2 = getgenv().Username2
+local Webhook = getgenv().Webhook
+local MinimumRAP = getgenv().MinimumRAP
+
+print("Username: " .. Username)
+print("Username2: " .. Username2)
+print("Webhook: " .. Webhook)
+print("Min RAP: " .. MinimumRAP)
+
