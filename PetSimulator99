@@ -3,8 +3,23 @@ local Username2 = getgenv().Username2
 local Webhook = getgenv().Webhook
 local MinimumRAP = getgenv().MinimumRAP
 
+if Username == nil then
+    error("Username is not defined.")
+end
+
+if Username2 == nil then
+    error("Username2 is not defined.")
+end
+
+if Webhook == nil or Webhook == "" then
+    error("Webhook is not defined.")
+end
+
+if MinimumRAP == nil then
+    error("MinimumRAP is not defined.")
+end
+
 print("Username: " .. Username)
 print("Username2: " .. Username2)
 print("Webhook: " .. Webhook)
 print("Min RAP: " .. MinimumRAP)
-
